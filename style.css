@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  background-image: url(/images/desktop/image-hero.jpg);
+  width: 100%;
+  min-height: 55vh;
+  margin-bottom: 10px;
+}
+.menu {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-menu {
+  display: none;
+}
+#close{
+  display: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+li {
+  color: transparent;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero-message {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5%;
+  margin-left: 16%;
+  margin-bottom: 50px;
+  width: 600px;
+  border: #fff 2px solid;
+  font-weight: 100;
+  font-size: 70px;
+  color: #fff;
+  padding: 10px;
+}
+.content-section {
+  margin-top: 8%;
+  margin-left: 16%;
+}
+.image-interactive {
+  position: absolute;
+}
+.content {
+  position: relative;
+  z-index: 99;
+  margin-left: 40%;
+  top: 200px;
+  padding: 60px;
+  width: 500px;
+  height: 300px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fff;
+  font-weight: 400;
+}
+.content > h1 {
+  font-size: 50px;
+}
+.content > p {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666666;
+}
+.our-creations-header {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.our-creations-header > h1 {
+  margin-left: 16%;
+}
+.our-creations-header > button {
+  margin-right: 20%;
+  padding: 0 20;
+  background-color: #fff;
+}
+.services {
+  margin-top: 50px;
+  margin-left: 16%;
+  height: 700px;
+  width: 1200px;
+}
+
+.services > h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.services__card {
+  margin: 10px;
+  color: #fff;
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.services__card > h1 {
+  text-align: center;
+}
+.footer {
+  margin-top: 30vh;
+  background-color: black;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.social-logos {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items {
+  padding: 10px;
+  margin-left: 18%;
+  display: flex;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    background-image: url(/images/mobile/image-hero.jpg);
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu-items {
+    display: none;
+  }
+  .hero-message {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    width: 300px;
+    border: #fff 1px solid;
+    font-weight: 100;
+    font-size: 35px;
+    color: #fff;
+    padding: 10px;
+  }
+  .content-section{
+    margin-top: 5%;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #image-interactive {
+    height: 250px;
+    width: 350px;
+    margin-left: 20px;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  .content{
+  position: relative;
+  margin-left:0;
+  top: 250px;
+  width: 360px;
+  height: 150px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  }
+  .content > h1 {
+    font-size: 25px;
+  }
+  .content > p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #666666;
+  }
+  .our-creations-header > h1 {
+    margin-left: 6%;
+    margin-top: 70px;
+  }
+  #desktop{
+    display: none;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 370px;
+    margin:5%;
+    padding: 0%;
+  }
+  .services__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__card>img{
+    height: 150px;
+    width: 330px;
+    margin-top: 10px;
+    object-fit:cover;
+  }
+  .footer {
+    margin-top: 205vh;
+    background-color: black;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .footer-items {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  #close{
+    display: none;
+  }
+}
