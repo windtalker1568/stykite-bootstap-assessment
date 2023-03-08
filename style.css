@@ -135,7 +135,7 @@ li {
   display: flex;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .hero {
     background-image: url(/images/mobile/image-hero.jpg);
     width: 100%;
